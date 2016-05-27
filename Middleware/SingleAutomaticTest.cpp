@@ -1,0 +1,4 @@
+#include "SingleAutomaticTest.h"
+
+
+
