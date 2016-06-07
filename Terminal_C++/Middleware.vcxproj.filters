@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\UProve">
+      <UniqueIdentifier>{67cfba89-4397-4f67-ae32-e19b4c17cd81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Tests">
+      <UniqueIdentifier>{b982bbea-f94e-43dd-8780-5aba6a4537fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Exceptions">
+      <UniqueIdentifier>{db00cd78-9c4c-4df5-aaa0-8ae77be259e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Util">
+      <UniqueIdentifier>{72a2fdc6-72a8-4512-94db-c5b5c4c77c68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Config">
+      <UniqueIdentifier>{0377dd11-4313-441c-bfdc-c1f45c49b73c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Card">
+      <UniqueIdentifier>{b011da18-7206-42ac-bf4a-bd59b8d8cc9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Ciphers">
+      <UniqueIdentifier>{ef1a1977-ee66-47f6-8066-6b6b498674ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Exceptions">
+      <UniqueIdentifier>{552e097b-cc2b-4e61-aa1c-121eb576486c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\UProve">
+      <UniqueIdentifier>{0b1bbf7b-d3ae-4e29-ad81-b8f401a39a16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Card">
+      <UniqueIdentifier>{198f9065-437d-4fc9-bff0-73ce9d70a7be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Tests">
+      <UniqueIdentifier>{aeceed11-6a23-46e6-9f1e-44921134d1af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Ciphers">
+      <UniqueIdentifier>{7a534097-1533-4423-b41a-f5d9c4a4f40a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Config">
+      <UniqueIdentifier>{c20966ef-0411-4d84-8a3f-ed4ea592c3c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Util">
+      <UniqueIdentifier>{c3473dd8-d16c-44b1-8076-2407b1455517}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Biometrics">
+      <UniqueIdentifier>{cf81bb62-5bab-4125-a71b-76cb516d20ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Biometrics">
+      <UniqueIdentifier>{885e3518-e1da-48c9-8f01-82505a79351d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SmartCardException.cpp">
+      <Filter>Source Files\Exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="TestCaseException.cpp">
+      <Filter>Source Files\Exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="Prover.cpp">
+      <Filter>Source Files\UProve</Filter>
+    </ClCompile>
+    <ClCompile Include="Issuer.cpp">
+      <Filter>Source Files\UProve</Filter>
+    </ClCompile>
+    <ClCompile Include="IssuerParameters.cpp">
+      <Filter>Source Files\UProve</Filter>
+    </ClCompile>
+    <ClCompile Include="Apdu.cpp">
+      <Filter>Source Files\Card</Filter>
+    </ClCompile>
+    <ClCompile Include="ApduRequest.cpp">
+      <Filter>Source Files\Card</Filter>
+    </ClCompile>
+    <ClCompile Include="ApduResponse.cpp">
+      <Filter>Source Files\Card</Filter>
+    </ClCompile>
+    <ClCompile Include="AplicationSpecificInfo.cpp">
+      <Filter>Source Files\UProve</Filter>
+    </ClCompile>
+    <ClCompile Include="Benchmark.cpp">
+      <Filter>Source Files\Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="Card.cpp">
+      <Filter>Source Files\Card</Filter>
+    </ClCompile>
+    <ClCompile Include="CardSession.cpp">
+      <Filter>Source Files\Card</Filter>
+    </ClCompile>
+    <ClCompile Include="CipherOffCard.cpp">
+      <Filter>Source Files\Ciphers</Filter>
+    </ClCompile>
+    <ClCompile Include="Configuration.cpp">
+      <Filter>Source Files\Config</Filter>
+    </ClCompile>
+    <ClCompile Include="CorelatedTestAttack.cpp">
+      <Filter>Source Files\Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="SelectionApdu.cpp">
+      <Filter>Source Files\Card</Filter>
+    </ClCompile>
+    <ClCompile Include="StatusSW.cpp">
+      <Filter>Source Files\Card</Filter>
+    </ClCompile>
+    <ClCompile Include="TestCase.cpp">
+      <Filter>Source Files\Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="Timer.cpp">
+      <Filter>Source Files\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="SingleAutomaticTest.cpp">
+      <Filter>Source Files\Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="ServerAuth.cpp">
+      <Filter>Source Files\Biometrics</Filter>
+    </ClCompile>
+    <ClCompile Include="ClientAuth.cpp">
+      <Filter>Source Files\Biometrics</Filter>
+    </ClCompile>
+    <ClCompile Include="Convert.cpp">
+      <Filter>Source Files\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="GaloisField.cpp">
+      <Filter>Source Files\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="Helper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="middleware.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Issuer.h">
+      <Filter>Header Files\UProve</Filter>
+    </ClInclude>
+    <ClInclude Include="IssuerParameters.h">
+      <Filter>Header Files\UProve</Filter>
+    </ClInclude>
+    <ClInclude Include="Prover.h">
+      <Filter>Header Files\UProve</Filter>
+    </ClInclude>
+    <ClInclude Include="SmartCardException.h">
+      <Filter>Header Files\Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="TestCaseException.h">
+      <Filter>Header Files\Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="CorelatedTestAttack.h">
+      <Filter>Header Files\Tests</Filter>
+    </ClInclude>
+    <ClInclude Include="Benchmark.h">
+      <Filter>Header Files\Tests</Filter>
+    </ClInclude>
+    <ClInclude Include="TestCase.h">
+      <Filter>Header Files\Tests</Filter>
+    </ClInclude>
+    <ClInclude Include="Timer.h">
+      <Filter>Header Files\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="defs.h">
+      <Filter>Header Files\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="Configuration.h">
+      <Filter>Header Files\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="Apdu.h">
+      <Filter>Header Files\Card</Filter>
+    </ClInclude>
+    <ClInclude Include="ApduRequest.h">
+      <Filter>Header Files\Card</Filter>
+    </ClInclude>
+    <ClInclude Include="ApduResponse.h">
+      <Filter>Header Files\Card</Filter>
+    </ClInclude>
+    <ClInclude Include="AplicationSpecificInfo.h">
+      <Filter>Header Files\UProve</Filter>
+    </ClInclude>
+    <ClInclude Include="Card.h">
+      <Filter>Header Files\Card</Filter>
+    </ClInclude>
+    <ClInclude Include="CardSession.h">
+      <Filter>Header Files\Card</Filter>
+    </ClInclude>
+    <ClInclude Include="SelectionApdu.h">
+      <Filter>Header Files\Card</Filter>
+    </ClInclude>
+    <ClInclude Include="StatusSW.h">
+      <Filter>Header Files\Card</Filter>
+    </ClInclude>
+    <ClInclude Include="CipherOffCard.h">
+      <Filter>Header Files\Ciphers</Filter>
+    </ClInclude>
+    <ClInclude Include="SingleAutomaticTest.h">
+      <Filter>Header Files\Tests</Filter>
+    </ClInclude>
+    <ClInclude Include="ServerAuth.h">
+      <Filter>Header Files\Biometrics</Filter>
+    </ClInclude>
+    <ClInclude Include="Convert.h">
+      <Filter>Header Files\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientAuth.h">
+      <Filter>Header Files\Biometrics</Filter>
+    </ClInclude>
+    <ClInclude Include="GaloisField.h">
+      <Filter>Header Files\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="feature1.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="feature2.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="feature3.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="default.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+  </ItemGroup>
+</Project>
