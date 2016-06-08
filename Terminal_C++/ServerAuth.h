@@ -103,16 +103,16 @@ namespace BioAuth
 		/// <param name="card">The card.</param>
 		/// <param name="data">The data.</param>
 		/// /
-/// <summary>
-/// Initializes a new instance of the <see cref="ServerAuth"/> class.
-/// </summary>
-/// <param name="card">The card.</param>
-/// <param name="data">The data.</param>
-/// <summary>
-/// Initializes a new instance of the <see cref="ServerAuth"/> class.
-/// </summary>
-/// <param name="card">The card.</param>
-/// <param name="data">The data.</param>
+		/// <summary>
+		/// Initializes a new instance of the <see cref="ServerAuth"/> class.
+		/// </summary>
+		/// <param name="card">The card.</param>
+		/// <param name="data">The data.</param>
+		/// <summary>
+		/// Initializes a new instance of the <see cref="ServerAuth"/> class.
+		/// </summary>
+		/// <param name="card">The card.</param>
+		/// <param name="data">The data.</param>
 		template<typename t>
 		ServerAuth(Card& card, data_size_structure<t>data);
 		/// <summary>
