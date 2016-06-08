@@ -18,15 +18,18 @@
 #include <functional>
 #include <iostream>
 #include <string>
+#include <map>
 
 typedef const byte  final;
 typedef std::vector<std::string> Matrix;
 typedef std::vector<byte> vArray;
 typedef unsigned long word;
 
+#define LOG 
+#define DEBUG
+
 namespace BioAuth {
 
-#define LOG 
 	struct Config {
 		final OFFSET_P1_CHAIN_BIO = 0x24;
 		final OFFSET_P1_SET_PASSWORD = 0x25;
@@ -55,6 +58,7 @@ namespace BioAuth {
 		final OFFSET_P1_GET_S3 = (byte)0x46;
 		final OFFSET_P1_GET_S1 = (byte)0x47;
 		final OFFSET_P1_GET_SK = (byte)0x48;
+		final OFFSET_P1_GET_M2_N1 = (byte)0x49;
 
 		char* LENGTH;
 		char*M;

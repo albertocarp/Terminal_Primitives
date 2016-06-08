@@ -53,9 +53,12 @@ short * GaloisField::generatePolinom()
 	size[1] = 1;
 	jj = 1;
 
-	if (m > 9) {
+	if (m > 9) 
+	{
+#ifdef LOG
 		printf("Computing cycle sets modulo %d\n", n);
 		printf("(This may take some time)...\n");
+#endif
 	}
 	do {
 		ii = 0;
@@ -113,8 +116,9 @@ short * GaloisField::generatePolinom()
 		printf("Parameters invalid!\n");
 		exit(0);
 	}
-
+#ifdef  LOG
 	printf("This is a (%d, %d, %d) binary BCH code\n", length, k, d);
+#endif //  DEBUG
 	g[0] = alpha_to[zeros[1]];
 	g[1] = 1;
 	for (ii = 2; ii <= rdncy; ii++) {
@@ -126,6 +130,7 @@ short * GaloisField::generatePolinom()
 				g[jj] = g[jj - 1];
 		g[0] = alpha_to[(index_of[g[0]] + zeros[ii]) % n];
 	}
+#ifdef LOG
 	FILE* f = fopen("default.txt", "a+");
 	fprintf(f, "public final Galois[] = {", g[ii]);
 	for (ii = 0; ii <= rdncy; ii++) {
@@ -135,6 +140,7 @@ short * GaloisField::generatePolinom()
 			fprintf(f,"%s","\n");
 	}
 	fprintf(f, "%s","}");
+#endif
 	return g;
 }
 

@@ -4,6 +4,7 @@
 template <typename ExpectedValue=value>
 class TestCase
 {
+
 protected:
 	int noIterations;
 	double media;
@@ -15,7 +16,7 @@ protected:
 	double maxValue;
 	double epsilon;
 public:
-	void assert(bool condition);
+	void assertCondition(bool condition);
     void setup(byte* selectAID, short sendLen);
 	virtual void run(ExpectedValue&,std::ostream& out = std::cout);
 	virtual void run(Apdu*);
@@ -26,10 +27,8 @@ public:
 	TestCase(int noIterations,double epsilon);
 	~TestCase();
 };
-
-
 template<typename ExpectedValue>
-void TestCase<ExpectedValue>::assert(bool condition)
+void TestCase<ExpectedValue>::assertCondition(bool condition)
 {
 	if (condition == false)
 		throw new TestCaseException("Condition not verified.Test case failed");
@@ -43,7 +42,6 @@ void TestCase<ExpectedValue>::setup(byte* selectAID,short sendLen)
 	StatusSW sw = response.getStatus();
 	this->assert(sw.SW1() == 0x90 && sw.SW2() == 0x00);
 }
-
 template<typename ExpectedValue>
 void TestCase<ExpectedValue>::run(ExpectedValue&, std::ostream& out)
 {

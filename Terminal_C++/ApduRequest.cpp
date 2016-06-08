@@ -77,7 +77,7 @@ void ApduRequest::update(Apdu * data)
 	const byte * pData = data->getData();
 	int length = data->getDataLength();
 
-	byte fullLength = this->getApduLength() + length;
+	word fullLength = this->getApduLength() + length;
 
 	byte * newData = new byte[fullLength];
 	newData[Apdu::ISO7816_OFFSET_CLA] = Cla;

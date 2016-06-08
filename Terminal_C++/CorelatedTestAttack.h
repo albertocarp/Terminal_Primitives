@@ -2,6 +2,8 @@
 #include "TestCase.h"
 #include "CipherOffCard.h"
 #include "Configuration.h"
+
+
 template<typename Cipher,typename ExpecedValue>
 class CorelatedTestAttack :
 	public TestCase<Cipher>
